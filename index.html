@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Meditation_configurator_v_1</title>
+</head>
+
+<body>
+
+  <div class="app">
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+
+        <div class="label">Тип практики:</div>
+
+        <select name="duration" id="">
+          <option value="3">Устойчивое внимание</option>
+          <option value="4">Осознанное наблюдение</option>
+          <option value="5">Свободные ассоциации</option>
+        </select>
+
+      </div>
+
+      <div class="information" id="">
+        <div>i</div>
+      </div>
+
+    </div>
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+
+        <div class="label">Фокус внимания:</div>
+
+        <select name="duration" id="">
+          <option value="3">Дыхание</option>
+          <option value="4">Часть тела</option>
+          <option value="5">Внешний звук</option>
+        </select>
+
+      </div>
+
+      <div class="information" id="">
+        <div>i</div>
+      </div>
+
+    </div>
+
+
+    <div class="box_header">Время</div>
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+
+        <div class="label">Длительность:</div>
+
+        <select name="duration" id="">
+          <option value="3">3 мин.</option>
+          <option value="4">4 мин.</option>
+          <option value="5">5 мин.</option>
+          <option value="6">6 мин.</option>
+        </select>
+
+      </div>
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+
+        <div class="label">Завершение практики:</div>
+
+        <select name="duration" id="">
+          <option value="3">По окончанию времени</option>
+          <option value="4">На 10-15% дольше</option>
+          <option value="4">Максимально</option>
+        </select>
+      </div>
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+        <div class="label">Период:</div>
+
+        <select name="duration" id="">
+          <option value="3">1 нед.</option>
+          <option value="4">2 нед.</option>
+          <option value="5">3 нед.</option>
+          <option value="6">1 мес.</option>
+        </select>
+      </div>
+
+
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+    <div class="box_header">Положение тела</div>
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+        <div class="label">Положение ног:</div>
+
+        <select name="duration" id="">
+          <option value="3">По турецки</option>
+          <option value="4">Полулотос (левая)</option>
+          <option value="4">Полулотос (правая)</option>
+          <option value="5">Лотос</option>
+        </select>
+      </div>
+
+
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+        <div class="label">Положение спины:</div>
+
+        <select name="duration" id="">
+          <option value="3">Ровная</option>
+          <option value="4">Расслабленная</option>
+        </select>
+      </div>
+
+
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+        <div class="label">Опора для спины:</div>
+
+        <select name="duration" id="">
+          <option value="3">С опорой</option>
+          <option value="4">Без опоры</option>
+          <option value="4">Переменная опора</option>
+        </select>
+      </div>
+
+
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+        <div class="label">Голова:</div>
+
+        <select name="duration" id="">
+          <option value="3">Тянемся макушкой вверх</option>
+          <option value="4">Свободная</option>
+        </select>
+      </div>
+
+      <div class="information" id="">i</div>
+
+
+
+    </div>
+
+
+    <div class="parameter_box">
+
+
+      <div class="parameters">
+        <div class="label">Плечи:</div>
+
+        <select name="duration" id="">
+          <option value="3">Расслаблены, опущены</option>
+          <option value="3">Свободны</option>
+        </select>
+      </div>
+
+      <div class="information" id="">i</div>
+
+
+
+    </div>
+
+
+    <div class="box_header">Дополнения</div>
+
+
+    <div class="parameter_box">
+
+      <div class="parameters">
+        <div class="label">Подушка:</div>
+
+        <select name="duration" id="">
+          <option value="3">Да</option>
+          <option value="4">Нет</option>
+        </select>
+      </div>
+
+      <div class="information" id="">i</div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+  <script src="scripts/main.js"></script>
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => console.log('Service Worker registered'))
+          .catch(err => console.log('Service Worker registration failed', err));
+      });
+    }
+  </script>
+
+</body>
+
+</html>
