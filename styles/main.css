@@ -155,6 +155,14 @@ select {
 
 /* ? ---- PAGE STATISTIC */
 
+
+.months_container {
+  width: 100%;
+  height: 40vh;
+  overflow-y: scroll;
+  /* border: 1px solid gray; */
+}
+
 .grid_days {
   width: 95%;
   display: grid;
@@ -179,6 +187,27 @@ select {
 .cell_bg_green {
   background: #65E090;
 }
+
+
+.graph_container {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 35vh;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+
+}
+
+.col {
+  width: 10px;
+  height: 200px;
+  /* border: 1px solid gray; */
+  background: rgba(154, 74, 74, 0.4);
+}
+
+
 
 
 
