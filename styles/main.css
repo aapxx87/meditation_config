@@ -74,11 +74,28 @@ select {
 
 }
 
-.parameters_body {
-  border-color: rgba(15, 112, 15, .6);
+.parameters_green {
+  border-color: rgba(15, 112, 15, .5);
+}
+
+.selector_bg_green {
+  background-color: rgba(15, 112, 15, .3);
 }
 
 
-.parameters_time {
-  border-color: rgba(74, 90, 154, 0.8);
+.parameters_blue {
+  border-color: rgba(74, 90, 154, 0.6);
+}
+
+.selector_bg_blue {
+  background-color: rgba(74, 90, 154, 0.3);
+}
+
+
+.parameters_audio {
+  border-color: rgba(154, 74, 74, 0.6);
+}
+
+.selector_bg_red {
+  background-color: rgba(154, 74, 74, 0.3);
 }
