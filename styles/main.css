@@ -10,21 +10,22 @@ body {
   color: #cdcdcd;
 
   /* ? - For dev mode */
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; */
+  height: 100vh;
 }
 
 .app {
   max-width: 430px;
-  padding: 5px;
+  padding: 10px;
   padding-top: 20px;
 
   /* ? - For dev mode */
-  /* width: 430px;
+  width: 430px;
   height: 930px;
-  border: 1px solid #4e4e4e; */
+  border: 1px solid #4e4e4e;
+  overflow-y: scroll;
 }
 
 
@@ -43,6 +44,8 @@ body {
   border: 1px solid rgba(78, 78, 78, 0.7);
   border-radius: 10px;
   padding: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   margin-bottom: 15px;
   color: #b9b8b8;
 }
@@ -67,4 +70,14 @@ body {
   justify-content: center;
   border: 1px solid gray;
   border-radius: 50%;
+}
+
+select {
+  background-color: #2e3238;
+  color: #cdcdcd;
+  padding: 3px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgba(78, 78, 78, 0.8);
+
 }
