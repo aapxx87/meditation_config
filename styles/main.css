@@ -8,24 +8,12 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #2e3238;
   color: #cdcdcd;
-
-  /* ? - For dev mode */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
 .app {
   max-width: 430px;
   padding: 10px;
   padding-top: 20px;
-
-  /* ? - For dev mode */
-  width: 430px;
-  height: 930px;
-  border: 1px solid #4e4e4e;
-  overflow-y: scroll;
 }
 
 
