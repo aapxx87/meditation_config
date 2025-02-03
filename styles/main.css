@@ -31,7 +31,7 @@ body {
   /* justify-content: space-between; */
   width: 95%;
   border: 1px solid rgba(78, 78, 78, 0.7);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -67,7 +67,7 @@ select {
   background-color: #2e3238;
   color: #cdcdcd;
   padding: 3px;
-  border-radius: 3px;
+  border-radius: 5px;
   outline: none;
   border: 1px solid rgba(78, 78, 78, 0.8);
   font-size: 16px;
@@ -79,7 +79,7 @@ select {
 }
 
 .selector_bg_green {
-  background-color: rgba(15, 112, 15, .3);
+  background-color: rgba(15, 112, 15, .2);
 }
 
 
@@ -97,5 +97,5 @@ select {
 }
 
 .selector_bg_red {
-  background-color: rgba(154, 74, 74, 0.3);
+  background-color: rgba(154, 74, 74, 0.2);
 }
