@@ -14,6 +14,7 @@ body {
   max-width: 430px;
   padding: 10px;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 
@@ -28,12 +29,13 @@ body {
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  width: 100%;
+  width: 95%;
   border: 1px solid rgba(78, 78, 78, 0.7);
   border-radius: 10px;
   padding: 10px;
   padding-top: 11px;
   padding-bottom: 11px;
+  margin-left: 20px;
   margin-bottom: 15px;
   color: #b9b8b8;
 }
@@ -58,15 +60,25 @@ body {
   justify-content: center;
   border: 1px solid gray;
   border-radius: 50%;
+  opacity: .5;
 }
 
 select {
   background-color: #2e3238;
-  color: #e2e2e2;
+  color: #cdcdcd;
   padding: 3px;
   border-radius: 3px;
   outline: none;
   border: 1px solid rgba(78, 78, 78, 0.8);
   font-size: 16px;
 
+}
+
+.parameters_body {
+  border-color: rgba(15, 112, 15, .6);
+}
+
+
+.parameters_time {
+  border-color: rgba(74, 90, 154, 0.8);
 }
