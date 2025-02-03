@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="manifest" href="manifest.json">
-  <title>Meditation_configurator_v_1</title>
+  <title>Meditation_configurator_v_2</title>
 </head>
 
 <body>
@@ -17,309 +17,457 @@
   <div class="app">
 
 
-    <div class="box_header">⚙️ Механика</div>
+    <div class="navbar_btn"></div>
 
-
-    <div class="parameter_box">
-
-      <div class="parameters">
-
-        <div class="label">Тип практики:</div>
-
-        <select name="duration" id="">
-          <option value="3">Устойчивое внимание</option>
-          <option value="4">Осознанное наблюдение</option>
-          <option value="5">Свободные ассоциации</option>
-        </select>
-
-      </div>
-
-      <div class="information" id="">
-        <div>i</div>
-      </div>
-
-    </div>
-
-    <div class="parameter_box">
-
-      <div class="parameters">
-
-        <div class="label">Фокус внимания:</div>
-
-        <select name="duration" id="">
-          <option value="3">Дыхание</option>
-          <option value="4">Часть тела</option>
-          <option value="5">Внешний звук</option>
-        </select>
-
-      </div>
-
-      <div class="information" id="">
-        <div>i</div>
-      </div>
-
+    <div class="navbar_menu">
+      <div class="page_config">Configurator</div>
+      <div class="page_statistic">Statistic</div>
     </div>
 
 
+    <!-- ? ---- PAGE CONFIGURATOR -->
+
+    <div class="app_page_configurator">
 
 
-    <div class="box_header">⏳ Время</div>
+      <div class="box_header">⚙️ Механика</div>
 
 
-    <div class="parameter_box parameters_blue">
+      <div class="parameter_box">
 
-      <div class="parameters ">
+        <div class="parameters">
 
-        <div class="label">Длительность:</div>
+          <div class="label">Тип практики:</div>
 
-        <select name="duration" class="selector_bg_blue" id="">
-          <option value="3">3 мин.</option>
-          <option value="4">4 мин.</option>
-          <option value="5">5 мин.</option>
-          <option value="6">6 мин.</option>
-        </select>
+          <select name="duration" id="">
+            <option value="3">Устойчивое внимание</option>
+            <option value="4">Осознанное наблюдение</option>
+            <option value="5">Свободные ассоциации</option>
+          </select>
+
+        </div>
+
+        <div class="information" id="">
+          <div>i</div>
+        </div>
 
       </div>
 
-      <div class="information" class="selector_bg_blue" id="">i</div>
+      <div class="parameter_box">
+
+        <div class="parameters">
+
+          <div class="label">Фокус внимания:</div>
+
+          <select name="duration" id="">
+            <option value="3">Дыхание</option>
+            <option value="4">Часть тела</option>
+            <option value="5">Внешний звук</option>
+          </select>
+
+        </div>
+
+        <div class="information" id="">
+          <div>i</div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="box_header">⏳ Время</div>
+
+
+      <div class="parameter_box parameters_blue">
+
+        <div class="parameters ">
+
+          <div class="label">Длительность:</div>
+
+          <select name="duration" class="selector_bg_blue" id="">
+            <option value="3">3 мин.</option>
+            <option value="4">4 мин.</option>
+            <option value="5">5 мин.</option>
+            <option value="6">6 мин.</option>
+          </select>
+
+        </div>
+
+        <div class="information" class="selector_bg_blue" id="">i</div>
+
+      </div>
+
+
+      <div class="parameter_box parameters_blue">
+
+        <div class="parameters">
+
+          <div class="label">Завершение:</div>
+
+          <select name="duration" class="selector_bg_blue" id="">
+            <option value="3">По окончанию времени</option>
+            <option value="4">На 10-15% дольше</option>
+            <option value="4">Максимально</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+      <div class="parameter_box parameters_blue">
+
+        <div class="parameters">
+          <div class="label">Период:</div>
+
+          <select name="duration" class="selector_bg_blue" id="">
+            <option value="3">1 нед.</option>
+            <option value="4">2 нед.</option>
+            <option value="5">3 нед.</option>
+            <option value="6">1 мес.</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+      <div class="parameter_box parameters_blue">
+
+        <div class="parameters">
+          <div class="label">Время медитации:</div>
+
+          <select name="duration" class="selector_bg_blue" id="">
+            <option value="3">После пробуждения</option>
+            <option value="4">Утро</option>
+            <option value="5">День</option>
+            <option value="6">Вечер</option>
+            <option value="6">Перед сном</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+
+
+
+      <!-- ? ---- ПОЛОЖЕНИЕ ТЕЛА ---- -->
+
+      <div class="box_header">🧘‍♂️ Положение тела</div>
+
+
+      <div class="parameter_box parameters_green">
+
+        <div class="parameters">
+          <div class="label">Положение ног:</div>
+
+          <select name="duration" class="selector_bg_green" id="">
+            <option value="3">По турецки</option>
+            <option value="4">Полулотос (левая)</option>
+            <option value="4">Полулотос (правая)</option>
+            <option value="5">Лотос</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+      <div class="parameter_box parameters_green">
+
+        <div class="parameters">
+          <div class="label">Противопоказания:</div>
+
+          <select name="duration" class="selector_bg_green" id="">
+            <option value="3">Есть от врача</option>
+            <option value="4">Есть дискомфорт</option>
+            <option value="4">Нет</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+
+      <div class="parameter_box parameters_green">
+
+        <div class="parameters">
+          <div class="label">Положение спины:</div>
+
+          <select name="duration" class="selector_bg_green" id="">
+            <option value="3">Ровная</option>
+            <option value="4">Расслабленная</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+      <div class="parameter_box parameters_green">
+
+        <div class="parameters">
+          <div class="label">Опора для спины:</div>
+
+          <select name="duration" class="selector_bg_green" id="">
+            <option value="3">С опорой</option>
+            <option value="4">Без опоры</option>
+            <option value="4">Переменная опора</option>
+          </select>
+        </div>
+
+
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+
+      <div class="parameter_box parameters_green">
+
+        <div class="parameters">
+          <div class="label">Голова:</div>
+
+          <select name="duration" class="selector_bg_green" id="">
+            <option value="3">Тянемся макушкой вверх</option>
+            <option value="4">Свободная</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+
+
+      </div>
+
+
+      <div class="parameter_box parameters_green">
+
+
+        <div class="parameters">
+          <div class="label">Плечи:</div>
+
+          <select name="duration" class="selector_bg_green" id="">
+            <option value="3">Расслаблены, опущены</option>
+            <option value="3">Свободны</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+
+
+      </div>
+
+
+
+      <!-- ? ---- ДОПОЛНЕНИЯ ---- -->
+
+      <div class="box_header">✨ Дополнения</div>
+
+
+      <div class="parameter_box">
+
+        <div class="parameters">
+          <div class="label">Подушка:</div>
+
+          <select name="duration" id="">
+            <option value="3">Да</option>
+            <option value="4">Нет</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+
+
+
+      <!-- ? ---- АУДИО ФОН ---- -->
+
+
+      <div class="box_header">🎧 Аудио фон</div>
+
+
+      <div class="parameter_box parameters_audio">
+
+        <div class="parameters">
+          <div class="label">Наушники:</div>
+
+          <select name="duration" class="selector_bg_red" id="">
+            <option value="3">Да</option>
+            <option value="4">Нет</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
+
+
+      <div class="parameter_box parameters_audio">
+
+        <div class="parameters">
+          <div class="label">Звуки:</div>
+
+          <select name="duration" class="selector_bg_red" id="">
+            <option value="3">В тишине</option>
+            <option value="3">С шумоподалением</option>
+            <option value="4">С медитативной музыкой</option>
+            <option value="4">Со звуками природы</option>
+          </select>
+        </div>
+
+        <div class="information" id="">i</div>
+
+      </div>
+
 
     </div>
 
 
-    <div class="parameter_box parameters_blue">
+    <!-- ? ---- PAGE STATISTIC -->
 
-      <div class="parameters">
+    <div class="app_page_statistic">
 
-        <div class="label">Завершение:</div>
 
-        <select name="duration" class="selector_bg_blue" id="">
-          <option value="3">По окончанию времени</option>
-          <option value="4">На 10-15% дольше</option>
-          <option value="4">Максимально</option>
-        </select>
+      <div class="month_box">
+
+        <div class="month_title">Январь</div>
+
+        <div class="grid_days">
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+
       </div>
 
-      <div class="information" id="">i</div>
 
-    </div>
+      <div class="month_box">
 
+        <div class="month_title">Февраль</div>
 
-    <div class="parameter_box parameters_blue">
+        <div class="grid_days">
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+        </div>
 
-      <div class="parameters">
-        <div class="label">Период:</div>
-
-        <select name="duration" class="selector_bg_blue" id="">
-          <option value="3">1 нед.</option>
-          <option value="4">2 нед.</option>
-          <option value="5">3 нед.</option>
-          <option value="6">1 мес.</option>
-        </select>
       </div>
 
-      <div class="information" id="">i</div>
 
-    </div>
+      <div class="month_box">
 
+        <div class="month_title">Март</div>
 
-    <div class="parameter_box parameters_blue">
+        <div class="grid_days">
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+          <div class="cell cell_bg_green"></div>
+        </div>
 
-      <div class="parameters">
-        <div class="label">Время медитации:</div>
-
-        <select name="duration" class="selector_bg_blue" id="">
-          <option value="3">После пробуждения</option>
-          <option value="4">Утро</option>
-          <option value="5">День</option>
-          <option value="6">Вечер</option>
-          <option value="6">Перед сном</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-    </div>
-
-
-
-
-
-    <!-- ? ---- ПОЛОЖЕНИЕ ТЕЛА ---- -->
-
-    <div class="box_header">🧘‍♂️ Положение тела</div>
-
-
-    <div class="parameter_box parameters_green">
-
-      <div class="parameters">
-        <div class="label">Положение ног:</div>
-
-        <select name="duration" class="selector_bg_green" id="">
-          <option value="3">По турецки</option>
-          <option value="4">Полулотос (левая)</option>
-          <option value="4">Полулотос (правая)</option>
-          <option value="5">Лотос</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-    </div>
-
-
-    <div class="parameter_box parameters_green">
-
-      <div class="parameters">
-        <div class="label">Противопоказания:</div>
-
-        <select name="duration" class="selector_bg_green" id="">
-          <option value="3">Есть от врача</option>
-          <option value="4">Есть дискомфорт</option>
-          <option value="4">Нет</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-    </div>
-
-
-
-    <div class="parameter_box parameters_green">
-
-      <div class="parameters">
-        <div class="label">Положение спины:</div>
-
-        <select name="duration" class="selector_bg_green" id="">
-          <option value="3">Ровная</option>
-          <option value="4">Расслабленная</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-    </div>
-
-
-    <div class="parameter_box parameters_green">
-
-      <div class="parameters">
-        <div class="label">Опора для спины:</div>
-
-        <select name="duration" class="selector_bg_green" id="">
-          <option value="3">С опорой</option>
-          <option value="4">Без опоры</option>
-          <option value="4">Переменная опора</option>
-        </select>
       </div>
 
 
 
-      <div class="information" id="">i</div>
-
-    </div>
 
 
-
-    <div class="parameter_box parameters_green">
-
-      <div class="parameters">
-        <div class="label">Голова:</div>
-
-        <select name="duration" class="selector_bg_green" id="">
-          <option value="3">Тянемся макушкой вверх</option>
-          <option value="4">Свободная</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-
-
-    </div>
-
-
-    <div class="parameter_box parameters_green">
-
-
-      <div class="parameters">
-        <div class="label">Плечи:</div>
-
-        <select name="duration" class="selector_bg_green" id="">
-          <option value="3">Расслаблены, опущены</option>
-          <option value="3">Свободны</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-
-
-    </div>
-
-
-
-    <!-- ? ---- ДОПОЛНЕНИЯ ---- -->
-
-    <div class="box_header">✨ Дополнения</div>
-
-
-    <div class="parameter_box">
-
-      <div class="parameters">
-        <div class="label">Подушка:</div>
-
-        <select name="duration" id="">
-          <option value="3">Да</option>
-          <option value="4">Нет</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-    </div>
-
-
-
-
-
-    <!-- ? ---- АУДИО ФОН ---- -->
-
-
-    <div class="box_header">🎧 Аудио фон</div>
-
-
-    <div class="parameter_box parameters_audio">
-
-      <div class="parameters">
-        <div class="label">Наушники:</div>
-
-        <select name="duration" class="selector_bg_red" id="">
-          <option value="3">Да</option>
-          <option value="4">Нет</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
-
-    </div>
-
-
-
-    <div class="parameter_box parameters_audio">
-
-      <div class="parameters">
-        <div class="label">Звуки:</div>
-
-        <select name="duration" class="selector_bg_red" id="">
-          <option value="3">В тишине</option>
-          <option value="3">С шумоподалением</option>
-          <option value="4">С медитативной музыкой</option>
-          <option value="4">Со звуками природы</option>
-        </select>
-      </div>
-
-      <div class="information" id="">i</div>
 
     </div>
 
