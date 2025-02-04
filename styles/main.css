@@ -31,7 +31,7 @@ body {
   border-radius: 50%;
 }
 
-.navbar_menu {
+/* .navbar_menu {
   display: none;
   position: absolute;
   top: 50px;
@@ -40,8 +40,7 @@ body {
   height: 50px;
   border: 1px solid rgba(128, 128, 128, .5);
   background: #2e3238;
-
-}
+} */
 
 
 
@@ -49,7 +48,7 @@ body {
 /* ? ---- APP PAGES */
 
 .app_page_configurator {
-  /* display: none; */
+  display: none;
 
   width: 100%;
   padding: 10px;
@@ -58,7 +57,7 @@ body {
 }
 
 .app_page_statistic {
-  display: none;
+  /* display: none; */
   width: 100%;
   padding: 10px;
   padding-top: 20px;
@@ -166,7 +165,7 @@ select {
 .grid_days {
   width: 95%;
   display: grid;
-  grid-template-columns: repeat(15, 1fr);
+  grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 5px;
   /* border: 1px solid gray; */
@@ -181,11 +180,11 @@ select {
   width: 20px;
   height: 20px;
   border: 1px solid rgba(44, 88, 61, .6);
-  background: rgba(44, 88, 61, .2);
+  background: rgba(44, 88, 61, .1);
 }
 
 .cell_bg_green {
-  background: #65E090;
+  background: rgba(101, 224, 144);
 }
 
 
