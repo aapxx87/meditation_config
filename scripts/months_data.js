@@ -198,7 +198,7 @@ const create_month_graph = function (days, days_time_arr, target_time) {
   // console.log(max);
 
 
-  const max_height = 300
+  const max_height = 200
 
 
   days_time_arr.forEach(function (day) {
