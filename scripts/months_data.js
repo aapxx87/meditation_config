@@ -2,17 +2,17 @@ const months_data = {
 
   february: {
 
-    month_name: 'Февраль',
+    month_name: 'February',
     year: 2025,
     month_days: 28,
-    timing: [36.34, 31.25, 32.30, 38.34],
+    timing: [36.34, 31.25, 32.30, 38.34,],
     target_time: 27,
 
   },
 
   january: {
 
-    month_name: 'Январь',
+    month_name: 'January',
     year: 2025,
     month_days: 31,
     timing: [11.12, 27.55, 33.34, 30.26, 32.08, 39.21, 40.30, 31.42, 30.17, 27.56, 32.42, 28.45, 27.07, 27.04, 25.25, 23.19, 27.45, 35.47, 27.49, 26.34, 32.01, 34.36, 26.43, 19.33, 32.25, 35.25, 8.27, 31.31, 30.01, 32.37, 34.56],
@@ -22,7 +22,7 @@ const months_data = {
 
   december: {
 
-    month_name: 'Декабрь',
+    month_name: 'December',
     year: 2024,
     month_days: 31,
     timing: [40.54, 37.44, 31.27, 34.07, 32.46, 39.33, 30.24, 30.15, 30.07, 30.43,
@@ -34,7 +34,7 @@ const months_data = {
 
   november: {
 
-    month_name: 'Ноябрь',
+    month_name: 'November',
     year: 2024,
     month_days: 30,
     timing: [30.08, 30.58, 28.32, 30.52, 32.40, 30.05, 25.29, 30.04, 30.03, 32.22, 32.51, 30.06,
@@ -46,7 +46,7 @@ const months_data = {
 
   october: {
 
-    month_name: 'Октябрь',
+    month_name: 'October',
     year: 2024,
     month_days: 30,
     timing: [0, 0, 0, 18.38, 22.20, 19.42, 23.12, 23.00, 23.23, 20.45, 24.20, 23.15, 26.54, 25.44, 23.39, 29.33, 12.53, 19.12, 28.41, 30.31, 27.50, 25.02, 30.17, 28.43, 30.12, 26.23, 29.36, 32.02, 28.05, 30.01],
@@ -57,7 +57,9 @@ const months_data = {
 }
 
 
-const container_months_statiastic = document.querySelector('.months_container')
+
+
+// ? ------ MONTHS TRACKERS STATISTIC
 
 
 const create_and_fill_month_component = function (month_name, month_days, year) {
@@ -156,7 +158,6 @@ const handling_obj = function (obj) {
 
   let arr_date_time_values = []
 
-
   for (const [key, monthData] of Object.entries(obj)) {
     arr_date_time_values.push(...monthData.timing)
   }
@@ -171,11 +172,158 @@ const handling_obj = function (obj) {
 
   }
 
-
-
 }
 
 
 handling_obj(months_data)
 
 
+
+
+
+
+// ? ------ GRAPH STATISTIC
+
+
+const create_month_graph = function (days, days_time_arr, target_time) {
+
+  let max = days_time_arr[0]
+
+  days_time_arr.forEach(function (number) {
+    if (number > max) {
+      max = number
+    }
+  })
+
+  // console.log(max);
+
+
+  const max_height = 300
+
+
+  days_time_arr.forEach(function (day) {
+
+    const current_col_height = (day / max) * max_height
+
+    const col = document.createElement('div')
+    col.classList.add('col')
+    col.style.height = `${current_col_height}px`
+    container_graph_cols.appendChild(col)
+
+  })
+
+
+  const add_empty_cols = days - days_time_arr.length
+
+  if (add_empty_cols > 0) {
+
+    for (let i = 1; i <= add_empty_cols; i++) {
+
+      const col = document.createElement('div')
+      col.classList.add('col')
+      container_graph_cols.appendChild(col)
+    }
+
+  }
+
+
+
+
+
+
+  // Получаем значения для доп линий с отображением на графике значений времени - три штуки
+
+  const max_line_height = max_height.toFixed(1);
+  const max_line_label = max.toFixed(1);
+
+  const line_1 = document.createElement('div')
+  line_1.classList.add('line_1')
+  line_1.style.bottom = `${max_line_height}px`
+
+  const label_line_1 = document.createElement('div')
+  label_line_1.classList.add('label_line_1')
+  label_line_1.style.bottom = `${max_line_height}px`
+  label_line_1.textContent = max_line_label
+
+  container_info_lines.appendChild(line_1)
+  container_info_lines.appendChild(label_line_1)
+
+
+
+  const medium_line_height = (max_height / 3 * 2).toFixed(1);
+  const medium_line_label = (max / 3 * 2).toFixed(1);
+
+  const line_2 = document.createElement('div')
+  line_2.classList.add('line_2')
+  line_2.style.bottom = `${medium_line_height}px`
+
+  const label_line_2 = document.createElement('div')
+  label_line_2.classList.add('label_line_1')
+  label_line_2.style.bottom = `${medium_line_height}px`
+  label_line_2.textContent = medium_line_label
+
+  container_info_lines.appendChild(line_2)
+  container_info_lines.appendChild(label_line_2)
+
+
+
+
+  const low_line_height = (max_height / 3).toFixed(1);
+  const low_line_label = (max / 3).toFixed(1);
+
+  const line_3 = document.createElement('div')
+  line_3.classList.add('line_2')
+  line_3.style.bottom = `${low_line_height}px`
+
+  const label_line_3 = document.createElement('div')
+  label_line_3.classList.add('label_line_1')
+  label_line_3.style.bottom = `${low_line_height}px`
+  label_line_3.textContent = low_line_label
+
+  container_info_lines.appendChild(line_3)
+  container_info_lines.appendChild(label_line_3)
+
+
+  const target_line_height = Math.trunc(max_height / max * target_time)
+  const target_line = document.createElement('div')
+  target_line.classList.add('line_target')
+  target_line.style.bottom = `${target_line_height}px`
+  container_info_lines.appendChild(target_line)
+
+
+}
+
+
+create_month_graph(months_data.february.month_days, months_data.february.timing, months_data.february.target_time)
+
+
+
+
+
+const month_titles = document.querySelectorAll('.month_title')
+
+const update_graph = function () {
+
+  month_titles.forEach(function (title) {
+
+    title.addEventListener('click', function () {
+      // console.log(title.textContent);
+
+      container_graph_cols.innerHTML = ''
+      container_info_lines.innerHTML = ''
+
+      create_month_graph(
+        months_data[title.textContent.toLowerCase()].month_days,
+        months_data[title.textContent.toLowerCase()].timing,
+        months_data[title.textContent.toLowerCase()].target_time)
+
+    })
+
+
+  })
+
+
+}
+
+
+update_graph()
