@@ -79,6 +79,7 @@ const create_and_fill_month_component = function (month_name, month_days, year) 
     const cell = document.createElement('div')
     cell.classList.add('cell')
     cell.id = `${year}_${month_name}_${i}`
+    cell.textContent = i
     grid_days.appendChild(cell)
   }
 
